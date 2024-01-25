@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:todo_practica/pages/Home.dart';
+import 'package:todo_practica/values/tema.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+void main() => runApp(
+      MainApp(),
+    );
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-          body: Center(
-        child: Text('Todo app sa'),
-      )),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false, 
+      theme: miTema(context),
+      title: 'Notas App',
+      home: HomePage(),
     );
   }
 }
