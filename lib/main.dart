@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:todo_practica/pages/Home.dart';
-import 'package:todo_practica/values/tema.dart';
+import 'package:todo_practica/pages/home.dart';
 
-void main() => runApp(
-      MainApp(),
-    );
+void main() {
+  runApp(MyApp());
+}
 
-class MainApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false, 
-      theme: miTema(context),
-      title: 'Notas App',
+    return const MaterialApp(
       home: HomePage(),
+      debugShowCheckedModeBanner: false, 
     );
   }
 }
+
